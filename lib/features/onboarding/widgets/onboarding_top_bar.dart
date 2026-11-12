@@ -25,17 +25,6 @@ class OnboardingTopBar extends StatelessWidget {
         else if (model.chipText != null)
           StatusChip(text: model.chipText!),
         const Spacer(),
-        GestureDetector(
-          onTap: onSkip,
-          child: const Text(
-            'Skip',
-            style: TextStyle(
-              color: MyColors.textGray,
-              fontSize: 14,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-        ),
       ],
     );
   }
@@ -57,7 +46,11 @@ class _BackButton extends StatelessWidget {
           color: Colors.white,
           shape: BoxShape.circle,
           boxShadow: [
-            BoxShadow(color: Color(0x14000000), blurRadius: 8, offset: Offset(0, 2)),
+            BoxShadow(
+              color: Color(0x14000000),
+              blurRadius: 8,
+              offset: Offset(0, 2),
+            ),
           ],
         ),
         child: const Icon(Icons.arrow_back, size: 18, color: MyColors.textDark),

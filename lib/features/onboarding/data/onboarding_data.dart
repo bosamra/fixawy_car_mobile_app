@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/const/colors.dart';
 import '../../../core/const/image_paths.dart';
 import '../model/onboarding_model.dart';
 
@@ -14,7 +13,7 @@ const List<OnboardingModel> onboardingPages = [
     imagePath: onboardingImage1,
     fallbackIcon: Icons.storefront_outlined,
     aspectRatio: 1.5,
-    chipText: 'Fixawy',
+    heroGradient: true,
   ),
 
   // 2. Get Help When You're Stranded
@@ -22,29 +21,11 @@ const List<OnboardingModel> onboardingPages = [
     title: "Get Help When You're Stranded",
     description:
         'Request roadside assistance, mobile mechanic or tow truck anywhere, anytime.',
-    buttonText: 'Next →',
+    buttonText: 'Next',
     imagePath: onboardingImage2,
     fallbackIcon: Icons.local_shipping_outlined,
     aspectRatio: 1.6,
-    showBack: true,
-    badges: [
-      HeroBadge(
-        text: '< 15 min ETA',
-        alignment: Alignment.topRight,
-        background: MyColors.navy,
-        textColor: Colors.white,
-        icon: Icons.bolt,
-        iconColor: MyColors.accentYellow,
-      ),
-      HeroBadge(
-        text: '24/7 Dispatch Ready',
-        alignment: Alignment.bottomLeft,
-        background: Colors.white,
-        textColor: MyColors.textDark,
-        icon: Icons.circle,
-        iconColor: MyColors.accentYellow,
-      ),
-    ],
+    heroGradient: true,
   ),
 
   // 3. Find Nearby Workshops & Services
@@ -52,30 +33,10 @@ const List<OnboardingModel> onboardingPages = [
     title: 'Find Nearby Workshops & Services',
     description:
         'Discover trusted garages and car services near you in one place.',
-    buttonText: 'Get Started →',
+    buttonText: 'Get Started',
     imagePath: onboardingImage3,
     fallbackIcon: Icons.map_outlined,
     aspectRatio: 1.1,
-    chipText: 'Fixawy Rescue & Care',
-    stepLabel: 'STEP 3 OF 3 • NETWORK DISCOVERY',
     heroGradient: true,
-    badges: [
-      HeroBadge(
-        text: 'Nasr City, Cairo',
-        alignment: Alignment.topRight,
-        background: Colors.white,
-        textColor: MyColors.textDark,
-        icon: Icons.location_on,
-        iconColor: Colors.redAccent,
-      ),
-      HeroBadge(
-        text: '500+ Verified Garages',
-        alignment: Alignment.bottomLeft,
-        background: Colors.white,
-        textColor: MyColors.textDark,
-        icon: Icons.settings,
-        iconColor: MyColors.accentYellow,
-      ),
-    ],
   ),
 ];

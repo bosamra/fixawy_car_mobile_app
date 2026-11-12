@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import '../../../core/const/colors.dart';
 import '../../../core/const/image_paths.dart';
 import '../../../core/widgets/safe_asset_image.dart';
-import '../../../core/widgets/status_chip.dart';
 import '../controller/splash_controller.dart';
 
 class SplashPage extends StatelessWidget {
@@ -61,30 +60,7 @@ class _LocationTag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Text(
-          'EG',
-          style: TextStyle(
-            color: Color(0xB3FFFFFF),
-            fontSize: 11,
-            letterSpacing: 2,
-          ),
-        ),
-        SizedBox(width: 6),
-        CircleAvatar(radius: 2.5, backgroundColor: MyColors.accentYellow),
-        SizedBox(width: 6),
-        Text(
-          'CAIRO',
-          style: TextStyle(
-            color: Color(0xB3FFFFFF),
-            fontSize: 11,
-            letterSpacing: 2,
-          ),
-        ),
-      ],
-    );
+    return const Row();
   }
 }
 
@@ -123,16 +99,20 @@ class _Brand extends StatelessWidget {
           'Fixawy',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 38,
+            fontSize: 40,
             fontWeight: FontWeight.w800,
           ),
         ),
         const SizedBox(height: 8),
         const Text(
-          'Your Car Care, Wherever You Are.',
-          style: TextStyle(color: Color(0xCCFFFFFF), fontSize: 14),
+          'Your Car Care,',
+          style: TextStyle(color: Color(0xCCFFFFFF), fontSize: 20),
         ),
         const SizedBox(height: 6),
+        const Text(
+          'Wherever You Are.',
+          style: TextStyle(color: Color(0xCCFFFFFF), fontSize: 22),
+        ),
       ],
     );
   }
@@ -162,13 +142,6 @@ class _Loader extends StatelessWidget {
             fontSize: 11,
             letterSpacing: 2,
           ),
-        ),
-        const SizedBox(height: 12),
-        StatusChip(
-          text: '24/7 Dispatch Ready',
-          background: const Color(0x1FFFFFFF),
-          textColor: Colors.white,
-          dotColor: MyColors.accentYellow,
         ),
       ],
     );
