@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import '../../onboarding/view/onboarding_page.dart';
 
 class SplashController extends GetxController {
-  static const Duration splashDuration = Duration(milliseconds: 2500);
+  static const Duration splashDuration = Duration(milliseconds: 3500);
 
   Timer? _timer;
 
